@@ -1,0 +1,24 @@
+[user]
+	email = narthur157@gmail.com
+	name = Nicholas Arthur
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[core]
+	autocrlf = true
+[rerere]
+	enabled = true
+    
+[push]
+	default = simple
+
+[alias]
+	s = status
+	pushup = push --set-upstream origin
+	repull = pull --rebase origin
+	d = diff
+	c = commit -m
+	ch = checkout
+	pu = "!git push --set-upstream origin \"$(git rev-parse --abbrev-ref HEAD)\""
