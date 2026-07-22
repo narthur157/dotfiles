@@ -10,6 +10,13 @@ apt-get install chezmoi
 or
 sh -c "$(curl -fsLS https://get.chezmoi.io)" -- init --apply narthur157
 
+Setup chezmoi:
+chezmoi init --apply narthur157
+
+
+Install msys2 (windows gcc)
+winget install --id MSYS2.MSYS2
+
 
 Setup posh-git for windows to have git status in CLI
 https://github.com/dahlbyk/posh-git#installation
